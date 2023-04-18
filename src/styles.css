@@ -46,10 +46,13 @@ body {
 /* ================= GENERAL STYLES ================= */
 
 .container {
-  width: var(--container-width-lg);
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
 }
 
 h1,
@@ -98,15 +101,17 @@ a:hover {
 }
 
 .btn {
-  width: max-content;
   display: inline-block;
-  color: var(--color-white);
-  background: var(--color-bg);
-  padding: 0.75rem 1.2rem;
-  border-radius: 0.4rem;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
   cursor: pointer;
-  border: 1px solid var(--color-primary);
-  transition: var(--transition);
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
 }
 
 .btn:hover {
